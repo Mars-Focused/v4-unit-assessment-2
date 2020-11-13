@@ -36,6 +36,20 @@ let foods = [
 */
 
 //CODE HERE
+//DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~
+
+foods.forEach(addCalories())
+
+function addCalories(carbs, protein, fat) {
+  calories = this.carbs * 4 + this.protein * 4 + this.fat * 9
+  foods[this].push(calories)
+  return foods
+}
+
+// foods[0].calories = 30
+// console.log(foods)
+
+console.log(foods)
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,6 +95,8 @@ const products = [
 */
 
 //CODE HERE
+
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
