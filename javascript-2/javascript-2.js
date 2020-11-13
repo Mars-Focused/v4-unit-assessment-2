@@ -171,8 +171,10 @@ const helensInfo = Object.assign({}, contactInfo, shippingInfo)
 
 //CODE HERE
 //DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~
-// const ellensInfo = Object.assign({}...shippingInfo, ...contactInfo)
 
+let ellensInfo = {...helensInfo}
+ellensInfo.name = 'Ellen'
+ellensInfo.email = 'ellen@email.com'
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -180,6 +182,8 @@ const helensInfo = Object.assign({}, contactInfo, shippingInfo)
 */
 
 //CODE HERE
+
+
 
 ////////////////////PROBLEM 8////////////////////
 /*
