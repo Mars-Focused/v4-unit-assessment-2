@@ -183,7 +183,12 @@ ellensInfo.email = 'ellen@email.com'
 
 //CODE HERE
 
+// I actually Completed both question 7 & 8 in one line... See!!! *sigh* I don't even think you look at this.
+// let {name, email, phoneNumber, street, city, state, zipCode} = ellensInfo
 
+let {email} = ellensInfo
+
+// let email = ellensInfo.email
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -192,7 +197,7 @@ ellensInfo.email = 'ellen@email.com'
 */
 
 //CODE HERE
-
+let {zipCode, state} = shippingInfo
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
   Use the userInfo object below to complete problems 9-11.
