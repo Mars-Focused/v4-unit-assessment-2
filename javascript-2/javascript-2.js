@@ -36,25 +36,17 @@ let foods = [
 */
 
 //CODE HERE
-//DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~DEBUG THIS~~
 
-foods.forEach(addCalories())
+foods.forEach((food) => {
+  food.calories = food.carbs * 4 + food.protein * 4 + food.fat * 9
+})
 
-function addCalories(carbs, protein, fat) {
-  calories = this.carbs * 4 + this.protein * 4 + this.fat * 9
-  foods[this].push(calories)
-  return foods
-}
-
-// foods[0].calories = 30
 // console.log(foods)
-
-console.log(foods)
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
-  For problems 2-4, you will be working with the products array below.
-  Think of this array as a store's inventory.
+For problems 2-4, you will be working with the products array below.
+Think of this array as a store's inventory.
 */
 
 //DO NOT EDIT CODE BELOW
@@ -89,13 +81,19 @@ const products = [
 
 ////////////////////PROBLEM 2////////////////////
 /*
-  You've decided to have a sale on everything you have in stock. It's all going to be 25% off. 
-  Using the map method, make a copy of your products array with the prices reduced by 25%. 
-  Save the copy to a new variable called 'saleProducts'.
+You've decided to have a sale on everything you have in stock. It's all going to be 25% off. 
+Using the map method, make a copy of your products array with the prices reduced by 25%. 
+Save the copy to a new variable called 'saleProducts'.
 */
 
 //CODE HERE
+//NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~
+const saleProducts = products.map((product) => {
+  product.price = product.price * 0.75
+  return product
+})
 
+// console.log(saleProducts)
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -107,6 +105,12 @@ const products = [
 */
 
 //CODE HERE
+
+ const blueProducts = saleProducts.filter(product => product.color.includes('blue'))
+
+ console.log("blueProducts", blueProducts)
+
+// const shortGoodBoys = dogs.filter(dog => dog.goodBoy)
 
 ////////////////////PROBLEM 4////////////////////
 /*
