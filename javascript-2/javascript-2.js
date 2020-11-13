@@ -87,7 +87,7 @@ Save the copy to a new variable called 'saleProducts'.
 */
 
 //CODE HERE
-//NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~NEEDS DEBUG~~
+
 const saleProducts = products.map((product) => {
   product.price = product.price * 0.75
   return product
@@ -108,9 +108,7 @@ const saleProducts = products.map((product) => {
 
  const blueProducts = saleProducts.filter(product => product.color.includes('blue'))
 
- console.log("blueProducts", blueProducts)
-
-// const shortGoodBoys = dogs.filter(dog => dog.goodBoy)
+//  console.log("blueProducts", blueProducts)
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -120,6 +118,16 @@ const saleProducts = products.map((product) => {
 */
 
 //CODE HERE
+
+const orderTotal = blueProducts.reduce((acc, element) => {
+  // console.log(acc)
+  return acc + element.price
+}, 0)
+
+// console.log(orderTotal)
+
+// FIRST TRY OH YEAH!!!
+// =^.^= I earned another kitten.
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -151,6 +159,9 @@ const shippingInfo = {
 
 //CODE HERE
 
+const helensInfo = Object.assign({}, contactInfo, shippingInfo)
+
+
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.
@@ -159,6 +170,9 @@ const shippingInfo = {
 */
 
 //CODE HERE
+//DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~DEBUG~THIS~~~
+// const ellensInfo = Object.assign({}...shippingInfo, ...contactInfo)
+
 
 ////////////////////PROBLEM 7////////////////////
 /* 
