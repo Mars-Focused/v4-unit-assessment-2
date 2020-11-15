@@ -260,6 +260,10 @@ const userInfo = {
 
 //CODE HERE
 
+const shouldAlert = userInfo.settings.alerts
+
+// console.log(userInfo.settings.alerts)
+
 ////////////////////PROBLEM 10////////////////////
 /*
   Set the value of topic below to the last item in gn@rly_c0der_007's topics array
@@ -268,6 +272,10 @@ const userInfo = {
 
 //CODE HERE
 
+const topic = userInfo.topics[3]
+
+// console.log(userInfo.topics[3])
+
 ////////////////////PROBLEM 11////////////////////
 /*
   Set the value of commenterId below to the userId of the first response to 
@@ -275,6 +283,10 @@ const userInfo = {
 */
 
 //CODE HERE
+
+const commenterId = userInfo.comments[1].responses[0].userId
+
+// console.log(userInfo.comments[1].responses[0].userId)
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -294,6 +306,36 @@ const userInfo = {
 */
 
 //CODE HERE
+
+const person = {
+  name:'Mars',
+  age: 27,
+  jobs: ['cashier', 'assembly line', 'web development'],
+
+  //birthday should be a function that adds 1 to the age, use the 'this' keyword to access age
+  birthday: function() {
+    this.age = this.age + 1
+    // console.log(this.age)
+    return this.age
+  },
+
+  favorites: {
+    color: 'blue',
+    number: 42,
+    book: 'the giver',
+  },
+
+  kids: [
+    {
+      name: 'john',
+      age: 26,
+    },
+    {
+      name: 'abraham',
+      age: 56,
+    }
+  ]
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -319,7 +361,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -332,6 +374,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
