@@ -127,7 +127,6 @@ const orderTotal = blueProducts.reduce((acc, element) => {
 // console.log(orderTotal)
 
 // FIRST TRY OH YEAH!!!
-// =^.^= I earned another kitten.
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
